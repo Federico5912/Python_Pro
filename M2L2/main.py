@@ -84,4 +84,4 @@ async def meme(ctx): # Comando para enviar un meme
 async def consejo(ctx):
     await ctx.send(f"💡 Consejo ecológico: {random.choice(consejos)}")
 
-Bot.run("")
+Bot.run("TOKEN")
