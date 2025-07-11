@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de memes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Generador de memes</h1>
+    <form method="POST">
+        <label>Texto superior:</label><br>
+        <input type="text", name="top_text" placeholder="Texto arriba"><br><br>
+        <label>Texto inferior:</label><br>
+        <input type="text", name="bottom_text" placeholder="Texto abajo"><br><br>
+        <button type="submit">¡Generar meme!</button>
+    </form>
+    <div class="meme">
+        <img src="/static/img/{{ image }}" alt="Meme">
+        <h2 class="top-text">{{ top }}</h2>
+        <h2 class="bottom-text">{{ bottom }}</h2>
+    </div>
+</body>
+</html>

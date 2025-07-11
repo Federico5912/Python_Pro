@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>M2L4</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tech is everywhere</h1>
+    <iframe 
+        src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=0&winddirection=1&uv=0&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/ip_romania_675514?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+        <h2>Datos de la informática</h2>
+        <div id="dato-curioso"></div>
+        <button onclick="mostrarDato()">Mostrar dato curioso</button>
+        <script>
+        const datosCuriosos = [
+            "El primer mouse de computadora fue hecho de madera en 1964.",
+            "Más de 6,000 nuevos virus informáticos se crean cada mes.",
+            "El primer correo electrónico fue enviado en 1971.",
+            "El primer disco duro pesaba más de una tonelada.",
+            "El primer sitio web aún está en línea: info.cern.ch.",
+            "El término 'bug' informático viene de una polilla real encontrada en una computadora.",
+            "El primer smartphone fue el IBM Simon, lanzado en 1994.",
+            "Cada minuto se suben más de 500 horas de video a YouTube.",
+            "El símbolo '@' se usó por primera vez en el correo electrónico.",
+            "El primer videojuego comercial fue Pong, lanzado en 1972."
+        ];
+
+        function mostrarDato() {
+            const indice = Math.floor(Math.random() * datosCuriosos.length);
+            document.getElementById('dato-curioso').textContent = datosCuriosos[indice];
+        }
+        </script>
+
+    ><iframe>
+</body>
+</html>

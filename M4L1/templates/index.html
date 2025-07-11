@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi diario</title>
+
+</head>
+<body>
+    <h1> Mi diario</h1>
+
+    <form method = "POST">
+        <input name = "title" placeholder = "Título"><br>
+        <input name = "subtitle" placeholder = "Subtítulo"><br>
+        <textarea name = "text" placeholder = "Escribe tu texto..."></textarea><br>
+        <button>Guardar</button>
+    </form>
+
+    <ul> 
+        {% for card in cards %}
+            <li><strong>{{ card.title }}</strong> - {{ card.subtitle }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

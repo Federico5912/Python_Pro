@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De eco-Construcción</title>
+    <link rel = "stylesheet" src = "../static/style.css">
+</head>
+<body>
+    <h1>Formulario de eco-construcción</h1>
+    
+    <form action="/submit" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Dirección:</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="date">Fecha de la construcción deseada:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

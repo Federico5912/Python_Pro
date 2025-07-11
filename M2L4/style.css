@@ -1,0 +1,16 @@
+
+@keyframes color-change {
+  0% {
+    color: blue;
+    }
+50% {
+    color: red;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+h1:hover {
+  animation: color-change 3s infinite;
+}
