@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+     <link rel = "stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav>
+        <a href = "/">Inicio</a>
+        <a href = "/about">Sobre Mí</a>
+        <a href = "/project">Proyectos</a>
+        <a href = "/contact">Contacto</a>
+    </nav>
+
+    <section>
+        <h1>Contacto</h1>
+        <form method="POST">
+            <input type="text" placeholder ="Tu nombre" name="name" required><br>
+
+            <textarea placeholder="Tu mensaje..." name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        {% if sent %}
+            <p>¡Gracias por contactarme!</p>
+            <p>¡Serás contestado a la brevedad!</p>
+        {% endif %}
+    </section>
+</body>
+</html>

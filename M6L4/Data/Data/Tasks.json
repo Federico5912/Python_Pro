@@ -1,0 +1,17 @@
+[
+  {
+    "texto": "Comer",
+    "hora": "12:00",
+    "notificado_en": null
+  },
+  {
+    "texto": "Ducharse",
+    "hora": "18:00",
+    "notificado_en": null
+  },
+  {
+    "texto": "Hola",
+    "hora": "07:00",
+    "notificado_en": null
+  }
+]
